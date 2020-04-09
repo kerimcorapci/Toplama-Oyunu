@@ -1,0 +1,70 @@
+package toplamaOyunu;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Intro {
+
+	public static void main(String[] args) {
+		
+		 //Oyunu başlatmak için a dışında bir tuşa basın
+		 //Eğer a ise uygulama durduruldu yaz
+		 		
+		Scanner scanner = new Scanner(System.in);
+		// TODO Auto-generated method stub
+		//Normal kod olarak
+		//Random random = new Random();
+		//int n1 = random.nextInt(10)+1;
+		//int n2 = random.nextInt(10)+1;
+				
+		System.out.println(RenkliBaski.RED + "RED COLORED" + RenkliBaski.RESET + " NORMAL");
+		
+		boolean oyunaDevamEdilsinMi = true;
+		
+		do {
+		int number1 = RandomNumberGenerator();
+		int number2 = RandomNumberGenerator();
+		int total = number1 + number2;
+		ekranaYaz("Lütfen assagidaki islemin sonucunu yaziniz");
+		
+		ekranaYaz(number1+" + "+number2);
+		int girilenSayi = scanner.nextInt();
+		
+		if (girilenSayi == (number1+number2)) {
+			ekranaYaz("Tebrikler soruyu doğru bildiniz");
+		}
+		else {
+			ekranaYaz("Soruyu bilemediniz");
+		}
+		
+		System.out.println("Tekrar oynamak ister misiniz(E/H)?");
+		String cevap = scanner.next();
+		if (cevap.toUpperCase().equals("H")) {
+			oyunaDevamEdilsinMi = false;
+			ekranaYaz("Oyun durduruldu");
+		}
+		try {
+			Thread.sleep(1500);
+		    } catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} while(oyunaDevamEdilsinMi);			
+		
+		
+		
+		
+		
+		
+	}
+	/**1 den 10 a kadar rastgele bir sayi üretir */
+public static int RandomNumberGenerator() {
+	Random random = new Random();
+	return random.nextInt(10)+1;
+}
+	/**Ekrana yazılan mesaji yazar */
+static void ekranaYaz(String gosterilecekMesaj) {
+	System.out.println(gosterilecekMesaj);
+}
+
+}

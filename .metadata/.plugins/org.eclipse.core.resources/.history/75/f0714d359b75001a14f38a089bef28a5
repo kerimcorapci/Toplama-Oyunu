@@ -1,0 +1,21 @@
+package oopTemelleri;
+
+public class intro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Personel yazilimci = new Personel();
+//		yazilimci.Ad = "Türkay";
+//		yazilimci.minimumMaas = -500;
+		yazilimci.setMinimumMaas(-500);
+		double sonuc =yazilimci.getMinimumMaas();
+		System.out.println(sonuc);
+		
+		
+//		Personel yazilimci2 = yazilimci;
+//		yazilimci2.Ad = "Kerim";
+//		
+//		System.out.println(yazilimci.Ad);
+	}
+
+}

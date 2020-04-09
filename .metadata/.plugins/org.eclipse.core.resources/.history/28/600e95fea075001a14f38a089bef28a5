@@ -1,0 +1,24 @@
+package oopTemelleri;
+
+public class Personel {
+	//Personelin ............... vardır
+	private String ad;
+	private String soyad;
+	private String ozgecmis;
+	private String telefon;
+	private String adres;
+	private double minimumMaas;
+	
+	public void setMinimumMaas(double deger) throws Exception {
+		if (deger>0) {
+			this.minimumMaas = deger;
+		}else {
+			throw new Exception("maaş 0' dan büyük olmalı");
+		}
+	}
+	
+	public double getMinimumMaas() {
+		return this.minimumMaas;
+		
+	}
+}

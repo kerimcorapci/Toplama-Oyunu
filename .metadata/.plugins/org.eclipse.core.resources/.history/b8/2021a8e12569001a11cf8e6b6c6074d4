@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner okuyucu = new Scanner(System.in);
+		System.out.println("İlk sayiyi girin");
+		int ilkSayi = okuyucu.nextInt();
+		System.out.println("İkinci sayiyi girin");
+		int ikinciSayi = okuyucu.nextInt();
+		
+		if (ilkSayi == ikinciSayi) {
+			System.out.println("İki sayı da eşittir");
+		}
+		
+		
+		
+		System.out.println("deneme");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// bir = değer atama, == matematiksel olarak
+		
+		
+		
+	}
+
+}

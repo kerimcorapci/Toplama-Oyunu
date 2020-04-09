@@ -1,0 +1,25 @@
+package zarOyunu;
+
+public class Oyuncu {
+
+	private Zar oyuncununZari;
+	private String oyuncuAdi;
+	
+	public int getZarDegeri() {
+		return oyuncununZari.getZarDegeri();
+	}
+	
+	public Zar getOyuncununZari() {
+		return oyuncununZari;
+	}
+	public void setOyuncununZari(Zar oyuncununZari) {
+		this.oyuncununZari = oyuncununZari;
+	}
+	public String getOyuncuAdi() {
+		return oyuncuAdi;
+	}
+	public void setOyuncuAdi(String oyuncuAdi) {
+		this.oyuncuAdi = oyuncuAdi;
+	}
+	
+}

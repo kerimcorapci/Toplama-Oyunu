@@ -1,0 +1,14 @@
+package duckHunting;
+
+public class Intro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GreenHeadDuck yesilBasli = new GreenHeadDuck();
+		RedHeadDuck kizilBasli = new RedHeadDuck();
+		
+		DuckGeneratorComponent duckGenerator = new DuckGeneratorComponent();
+		duckGenerator.FlyDuck(yesilBasli);
+	}
+
+}

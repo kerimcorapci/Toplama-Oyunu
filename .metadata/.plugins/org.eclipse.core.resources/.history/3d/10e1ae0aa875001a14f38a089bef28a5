@@ -1,0 +1,58 @@
+package zarOyunu;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * 1. Oyunda iki oyuncu vardır. Oyun ve oyuncu nesnesi
+		 * 2. Her oyuncunun bir zarı vardır. zar nesnesi
+		 * 3. Oyun esnasında önce ilk oyuncu zar atar
+		 * 4. Sonra diğer oyuncu zar atar
+		 * 5. Büyük atan kazanır
+		 * 
+		 * */
+		Scanner okur = new Scanner(System.in);
+		System.out.println("İlk oyuncunun adını giriniz:");
+		String oyuncu1İsim = okur.nextLine();
+		System.out.println("İkinci oyuncunun adını giriniz:");
+		String oyuncu2İsim = okur.nextLine();
+		
+		Zar z1 = new Zar();
+		Zar z2 = new Zar();
+		
+		Oyuncu o1 = new Oyuncu();
+		o1.setOyuncununZari(z1);
+		o1.setOyuncuAdi(oyuncu1İsim);
+		
+		Oyuncu o2 = new Oyuncu();
+		o2.setOyuncununZari(z2);
+		o2.setOyuncuAdi(oyuncu2İsim);
+		
+		Oyun zarOyunu = new Oyun();
+		zarOyunu.setOyuncu1(o1);
+		zarOyunu.setOyuncu2(o2);
+		
+		zarOyunu.IlkOyuncuOynat();
+		System.out.println(o1.getOyuncununAttigiZarDegeri());
+//		try {
+//			Thread.sleep(2000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		zarOyunu.IkinciOyuncuOynat();
+		System.out.println(o2.getOyuncununAttigiZarDegeri());
+		
+		Oyuncu kazanan = zarOyunu.Karsilastir();
+		if (kazanan == null) {
+			System.out.print("berabere");
+		}
+		else {
+			System.out.println(kazanan.getOyuncuAdi() + " kazandi");
+		}
+	}
+
+}

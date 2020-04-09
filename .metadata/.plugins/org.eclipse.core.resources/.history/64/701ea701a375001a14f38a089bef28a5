@@ -1,0 +1,42 @@
+package zarOyunu;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * 1. Oyunda iki oyuncu vardır. Oyun ve oyuncu nesnesi
+		 * 2. Her oyuncunun bir zarı vardır. zar nesnesi
+		 * 3. Oyun esnasında önce ilk oyuncu zar atar
+		 * 4. Sonra diğer oyuncu zar atar
+		 * 5. Büyük atan kazanır
+		 * 
+		 * */
+		Zar z1 = new Zar();
+		Zar z2 = new Zar();
+		
+		Oyuncu o1 = new Oyuncu();
+		o1.setOyuncununZari(z1);
+		o1.setOyuncuAdi("Kerim Corapci");
+		
+		Oyuncu o2 = new Oyuncu();
+		o2.setOyuncununZari(z2);
+		o2.setOyuncuAdi("Türkay Ürkmez");
+		
+		Oyun zarOyunu = new Oyun();
+		zarOyunu.setOyuncu1(o1);
+		zarOyunu.setOyuncu2(o2);
+		
+		zarOyunu.IlkOyuncuOynat();
+		zarOyunu.IkinciOyuncuyuOynat();
+		
+		Oyuncu kazanan = zarOyunu.Karsilastir();
+		if (kazanan == null) {
+			System.out.print("berabere");
+		}
+		else {
+			System.out.println(kazanan.getOyuncuAdi() + " kazandi");
+		}
+	}
+
+}

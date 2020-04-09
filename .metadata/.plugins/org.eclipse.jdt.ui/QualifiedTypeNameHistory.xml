@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="oopTemelleri.Personel"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="zarOyunu.Zar"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="trendyolOrnegi.Urun"/>
+    <fullyQualifiedTypeName name="arabaSimulasiyonu.Araba"/>
+    <fullyQualifiedTypeName name="counterStrike.Weapon"/>
+    <fullyQualifiedTypeName name="counterStrike.Pistol"/>
+    <fullyQualifiedTypeName name="counterStrike.Player"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="duckHunting.Flyable"/>
+    <fullyQualifiedTypeName name="duckHunting.DuckGeneratorComponent"/>
+    <fullyQualifiedTypeName name="duckHunting.IFastable"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

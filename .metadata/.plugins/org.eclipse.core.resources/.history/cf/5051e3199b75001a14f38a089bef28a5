@@ -1,0 +1,10 @@
+package oopTemelleri;
+
+public class Personel {
+	//Personelin ............... vardır
+	public String Ad;
+	public String Soyad;
+	public String Ozgecmis;
+	public String Telefon;
+	public String Adres;
+}

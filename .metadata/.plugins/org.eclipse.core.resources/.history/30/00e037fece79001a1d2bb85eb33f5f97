@@ -1,0 +1,92 @@
+package toplamaOyunu;
+
+import java.util.InputMismatchException;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Intro {
+
+	public static void main(String[] args) {
+		
+		 //Oyunu başlatmak için a dışında bir tuşa basın
+		 //Eğer a ise uygulama durduruldu yaz
+		 		
+		Scanner scanner = new Scanner(System.in);
+		// TODO Auto-generated method stub
+		//Normal kod olarak
+		//Random random = new Random();
+		//int n1 = random.nextInt(10)+1;
+		//int n2 = random.nextInt(10)+1;
+				
+	
+		boolean oyunaDevamEdilsinMi = true;
+		try {
+				do {
+					int number1 = RandomNumberGenerator();
+					int number2 = RandomNumberGenerator();
+					int total = number1 + number2;
+					ekranaYaz("Lütfen assagidaki islemin sonucunu yaziniz");
+		
+					ekranaYaz(number1+" + "+number2);
+					int girilenSayi = scanner.nextInt();
+		
+						if (girilenSayi == (number1+number2)) {
+							ekranaYaz("Tebrikler soruyu doğru bildiniz");
+							}
+							else {
+							ekranaYaz("Soruyu bilemediniz");
+							}
+		
+						boolean kelimeDogruMu = true;
+						while (kelimeDogruMu) {
+						//Eğer başka karakter girdiyse tekrardan devam etmek istiyor musunuz diye sorsun						
+							
+					System.out.println("Oyuna devam etmek istiyor musunuz (E/H)?");
+					String cevap = scanner.next();
+							
+							
+						if (cevap.toUpperCase().equals("E")) {
+							oyunaDevamEdilsinMi = true;
+							ekranaYaz("Oyuna devam ediliyor");
+							try {
+								Thread.sleep(1500);
+									} catch (InterruptedException e) {
+										// TODO Auto-generated catch block
+										e.printStackTrace();
+																	 }
+							}
+							else if (cevap.toUpperCase().equals("H")) {		
+									oyunaDevamEdilsinMi = false;
+								ekranaYaz("Oyun durduruldu");						
+							}
+							else {
+								ekranaYaz("Farklı bir karakter girdiniz");
+								kelimeDogruMu = false;
+								}
+							
+						} 	
+				} while(oyunaDevamEdilsinMi);			
+		
+		
+			
+		}
+		catch (InputMismatchException hata1) {
+			// TODO: handle exception
+			ekranaYaz("Lütfen bir sayi giriniz");
+		}
+		 
+	
+		
+	
+	}
+	/**1 den 10 a kadar rastgele bir sayi üretir */
+public static int RandomNumberGenerator() {
+	Random random = new Random();
+	return random.nextInt(10)+1;
+}
+	/**Ekrana yazılan mesaji yazar */
+static void ekranaYaz(String gosterilecekMesaj) {
+	System.out.println(gosterilecekMesaj);
+}
+
+}

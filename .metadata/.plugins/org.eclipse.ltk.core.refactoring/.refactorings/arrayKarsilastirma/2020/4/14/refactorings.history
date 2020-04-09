@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static boolean isFoundİnUSedNumbers(int [] arr2, int [] usedNumbers, int i)&apos; from &apos;arrayKarsilastirma.Baslat.merge()&apos; to &apos;arrayKarsilastirma.Baslat&apos;&#x0D;&#x0A;- Original project: &apos;arrayKarsilastirma&apos;&#x0D;&#x0A;- Method name: &apos;isFoundİnUSedNumbers&apos;&#x0D;&#x0A;- Destination type: &apos;arrayKarsilastirma.Baslat&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;isFoundİnUSedNumbers&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;arrayKarsilastirma{Baslat.java" name="isFoundİnUSedNumbers" replace="false" selection="789 167" stamp="1585735506120" version="1.0" visibility="2"/>
+</session>

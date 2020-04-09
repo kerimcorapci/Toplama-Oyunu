@@ -1,0 +1,49 @@
+package trendyolOrnegi;
+
+import java.util.ArrayList;
+
+public class Intro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Koleksiyon ve arrayler kardeş gibi evrilmiş hali
+		ArrayList liste = new ArrayList();
+		
+		//Boxing:
+		liste.add(3);
+		Object obj1=3;
+		liste.add("Kerim");
+		Object obj2="Kerim";
+		liste.add(false);
+		
+		//UnBoxing:
+		String isim = (String)liste.get(1);
+		
+		ArrayList<String> isimler = new ArrayList<String>();
+		
+		ArrayList<Urun> urunlerim = new ArrayList<Urun>();
+		
+		Urun tisort = new Urun();
+		tisort.setUrumAdi("Aqua Di Polo");
+		tisort.setAciklama("Kadın Güneş Gözlüğü PLD17B195801");
+		tisort.setPuan(4.3f);
+		
+		Urun gozluk = new Urun();
+		tisort.setUrumAdi("Polo tişört");
+		tisort.setAciklama("Kırmızı Polo Yaka");
+		tisort.setPuan(5.0f);
+		
+		
+		urunlerim.add(tisort);
+		urunlerim.add(gozluk);
+		
+		
+		for (Urun urun : urunlerim) {
+			System.out.println("----------------------------------------");
+			System.out.println("|  urun adı " + urun.getUrumAdi() + " "+ urun.getFiyat() + "TL"|");
+			System.out.println("-----------------------------------------");
+		}
+		
+	}
+
+}

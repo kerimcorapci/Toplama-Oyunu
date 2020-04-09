@@ -1,0 +1,42 @@
+package zarOyunu;
+
+public class Oyun {
+
+	private Oyuncu oyuncu1;
+	private Oyuncu oyuncu2;
+	
+	
+	public void IlkOyuncuOynat() {
+		oyuncu1.ZarAt();
+	}
+	public void IkinciOyuncuOynat() {
+		oyuncu2.ZarAt();
+	}
+	
+	public Oyuncu getOyuncu1() {
+		return oyuncu1;
+	}
+	public void setOyuncu1(Oyuncu oyuncu1) {
+		this.oyuncu1 = oyuncu1;
+	}
+	public Oyuncu getOyuncu2() {
+		return oyuncu2;
+	}
+	public void setOyuncu2(Oyuncu oyuncu2) {
+		this.oyuncu2 = oyuncu2;
+	}
+	public void IkinciOyuncuyuOynat() {
+		
+	}
+	public Oyuncu Karsilastir() {
+		if (oyuncu1.getOyuncununAttigiZarDegeri()>oyuncu2.getOyuncununAttigiZarDegeri()) {
+			return oyuncu1;
+		}
+		else if (oyuncu1.getOyuncununAttigiZarDegeri()<oyuncu2.getOyuncununAttigiZarDegeri()) {
+			return oyuncu2;
+		}
+		else {
+			return null;
+		}
+	}
+}
